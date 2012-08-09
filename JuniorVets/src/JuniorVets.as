@@ -1,5 +1,6 @@
 package
 {
+	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	
 	[SWF(frameRate="30", backgroundColor="#FFFFFF", width="944", height="577")]
@@ -7,7 +8,7 @@ package
 	{
 		public function JuniorVets()
 		{
-			
+		
 		}
 	}
 }
