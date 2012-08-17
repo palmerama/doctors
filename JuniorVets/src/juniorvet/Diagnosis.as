@@ -31,7 +31,7 @@ package juniorvet
 		
 		private function onMouseDownYesButton(event:MouseEvent):void
 		{
-			dispatchEvent(new CustomEvent(CustomEvents.GOTO_TREATMENT));
+			dispatchEvent(new CustomEvent(Constants.GOTO_TREATMENT));
 		}
 	}
 }

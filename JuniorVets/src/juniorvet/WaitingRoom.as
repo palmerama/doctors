@@ -20,6 +20,9 @@ package juniorvet
 		public var spawnArea:Sprite;
 		public var arrowButton:SelectableButton;
 		
+		// class
+		
+		
 		
 		public function WaitingRoom()
 		{
@@ -32,7 +35,7 @@ package juniorvet
 		private function onMouseDownArrowButton(event:MouseEvent):void
 		{
 			showNav(false);
-			dispatchEvent(new CustomEvent(CustomEvents.GOTO_RECEPTION, null, true));
+			dispatchEvent(new CustomEvent(Constants.GOTO_RECEPTION, null, true));
 		}
 		
 		public function showNav(show:Boolean=true):void
@@ -48,6 +51,8 @@ package juniorvet
 			var animalY:Number = spawnArea.y + Math.random()*spawnArea.height;
 			animal.scale = .4 + Math.random();
 			animal.scaleY = .2;
+			animal.active = true;
+			animal.currentLocation = Constants.WAITING_ROOM;
 			
 			TweenMax.to(animal, .6, {y:animalY, scaleY:animal.scale, ease:Bounce.easeOut, delay:.6});			
 			addChild(animal);

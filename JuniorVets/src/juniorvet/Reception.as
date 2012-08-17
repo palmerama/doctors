@@ -34,17 +34,17 @@ package juniorvet
 		
 		private function onMouseDownSpawnAnimalButton(event:MouseEvent):void
 		{
-			dispatchEvent(new CustomEvent(CustomEvents.SPAWN_RANDOM_ANIMAL, null, true));
+			dispatchEvent(new CustomEvent(Constants.SPAWN_RANDOM_ANIMAL, null, true));
 		}
 		
 		private function onMouseDownWaitingRoomButton(event:MouseEvent):void
 		{
-			dispatchEvent(new CustomEvent(CustomEvents.GOTO_WAITING_ROOM, null, true));
+			dispatchEvent(new CustomEvent(Constants.GOTO_WAITING_ROOM, null, true));
 		}
 		
 		private function onMouseDownRecoveryWardButton(event:MouseEvent):void
 		{
-			dispatchEvent(new CustomEvent(CustomEvents.GOTO_RECOVERY_WARD, null, true));
+			dispatchEvent(new CustomEvent(Constants.GOTO_RECOVERY_WARD, null, true));
 		}
 	}
 }

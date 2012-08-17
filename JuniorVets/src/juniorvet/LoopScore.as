@@ -35,7 +35,7 @@ package juniorvet
 		
 		private function onMouseDownOKButton(event:MouseEvent):void
 		{
-			dispatchEvent(new CustomEvent(CustomEvents.GOTO_RECOVERY_WARD_WITH_ANIMAL));
+			dispatchEvent(new CustomEvent(Constants.GOTO_RECOVERY_WARD_WITH_ANIMAL));
 		}
 		
 		public function useScores(scores:Object, totalScore:int):void

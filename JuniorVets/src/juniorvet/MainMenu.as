@@ -34,12 +34,12 @@ package juniorvet
 		{
 			onGotoReception(null);
 			
-			reception.addEventListener(CustomEvents.GOTO_WAITING_ROOM, onGotoWaitingRoom, false, 0, true);
-			reception.addEventListener(CustomEvents.GOTO_RECOVERY_WARD, onGotoRecoveryWard, false, 0, true);
-			reception.addEventListener(CustomEvents.SPAWN_RANDOM_ANIMAL, onSpawnRandomAnimal, false, 0, true);
+			reception.addEventListener(Constants.GOTO_WAITING_ROOM, onGotoWaitingRoom, false, 0, true);
+			reception.addEventListener(Constants.GOTO_RECOVERY_WARD, onGotoRecoveryWard, false, 0, true);
+			reception.addEventListener(Constants.SPAWN_RANDOM_ANIMAL, onSpawnRandomAnimal, false, 0, true);
 			
-			waitingRoom.addEventListener(CustomEvents.GOTO_RECEPTION, onGotoReception, false, 0, true);
-			recoveryWard.addEventListener(CustomEvents.GOTO_RECEPTION, onGotoReception, false, 0, true);
+			waitingRoom.addEventListener(Constants.GOTO_RECEPTION, onGotoReception, false, 0, true);
+			recoveryWard.addEventListener(Constants.GOTO_RECEPTION, onGotoReception, false, 0, true);
 		}
 		
 		private function onSpawnRandomAnimal(event:Event):void
