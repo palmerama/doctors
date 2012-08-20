@@ -11,7 +11,7 @@ package juniorvet
 	import juniorvet.animals.Animal;
 	import juniorvet.animals.AnimalManager;
 	
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.utils.CustomEvent;
 	
 	
 	public class MainMenu extends Sprite

@@ -10,7 +10,7 @@ package juniorvet.animals
 	
 	import juniorvet.Constants;
 	
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.utils.CustomEvent;
 	
 	
 	public class Animal extends MovieClip

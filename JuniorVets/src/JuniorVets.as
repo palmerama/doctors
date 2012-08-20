@@ -12,7 +12,8 @@ package
 	import juniorvet.Constants;
 	import juniorvet.animals.AnimalManager;
 	
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.utils.CustomEvent;
+	
 	
 	[SWF(frameRate="30", backgroundColor="#FFFFFF", width="944", height="577")]
 	public class JuniorVets extends Sprite

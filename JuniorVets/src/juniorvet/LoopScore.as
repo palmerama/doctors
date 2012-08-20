@@ -5,8 +5,8 @@ package juniorvet
 	import flash.events.MouseEvent;
 	import flash.text.TextField;
 	
-	import tv.palmerama.gui.SelectableButton;
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.gui.SelectableButton;
+	import com.wehaverhythm.utils.CustomEvent;
 	
 	
 	public class LoopScore extends Sprite

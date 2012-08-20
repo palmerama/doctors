@@ -1,4 +1,4 @@
-package tv.palmerama.gui
+package com.wehaverhythm.gui
 {
 	import com.greensock.TweenMax;
 	import com.greensock.easing.Linear;

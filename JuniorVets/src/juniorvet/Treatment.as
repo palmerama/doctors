@@ -3,8 +3,8 @@ package juniorvet
 	import flash.display.Sprite;
 	import flash.events.MouseEvent;
 	
-	import tv.palmerama.gui.SelectableButton;
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.gui.SelectableButton;
+	import com.wehaverhythm.utils.CustomEvent;
 	import flash.events.Event;
 	
 	

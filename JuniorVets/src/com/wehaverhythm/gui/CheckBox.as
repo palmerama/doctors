@@ -1,4 +1,4 @@
-package tv.palmerama.gui 
+package com.wehaverhythm.gui 
 {	
 	import flash.display.MovieClip;
 	import flash.events.Event;

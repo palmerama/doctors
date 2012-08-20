@@ -1,11 +1,11 @@
-package tv.palmerama.utils
+package com.wehaverhythm.utils
 {
 	import flash.display.DisplayObject;
 	import flash.display.MovieClip;
 	import flash.display.Sprite;
 	import flash.external.ExternalInterface;
 	
-
+	
 	public class Debug
 	{
 		public function Debug()
@@ -64,6 +64,9 @@ package tv.palmerama.utils
 			return msg;
 		}
 		
+		/**
+		 * Returns the function that called your function.
+		 */
 		public static function getCallee(calltStackIndex:int=3):String
 		{
 			var stackLine:String = new Error().getStackTrace().split( "\n" , calltStackIndex + 1 )[calltStackIndex];
@@ -73,18 +76,14 @@ package tv.palmerama.utils
 			return className + "." + functionName + ", line " + lineNumber;
 		}
 		
-		public static function log(obj:*, type:String="log"):void
+		/**
+		 * Logs to the js console when available; traces if not.
+		 * NB. some types trace object structures!
+		 */
+		public static function log(obj:*, type:String="log"):void // log, info, warn, debug, error
 		{			
 			if (ExternalInterface.available) ExternalInterface.call("console."+type, obj);
 			else trace(obj);
-		}
-		
-		public static function assert(assertion:String):void
-		{
-			assertion = "ASSERT: " + assertion;
-			
-			if (ExternalInterface.available) ExternalInterface.call("alert", assertion);
-			else trace(assertion);
 		}
 	}
 }

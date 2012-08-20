@@ -10,8 +10,8 @@ package juniorvet
 	
 	import juniorvet.animals.Animal;
 	
-	import tv.palmerama.gui.SelectableButton;
-	import tv.palmerama.utils.CustomEvent;
+	import com.wehaverhythm.gui.SelectableButton;
+	import com.wehaverhythm.utils.CustomEvent;
 	
 	
 	public class RecoveryWard extends Sprite

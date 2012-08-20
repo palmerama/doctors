@@ -1,4 +1,4 @@
-package tv.palmerama.utils
+package com.wehaverhythm.utils
 {	
 	import flash.display.MovieClip;
 	import flash.events.Event;

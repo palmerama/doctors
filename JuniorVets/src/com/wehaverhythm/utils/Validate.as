@@ -1,4 +1,4 @@
-package tv.palmerama.utils
+package com.wehaverhythm.utils
 {
 
 	public class Validate extends Object
